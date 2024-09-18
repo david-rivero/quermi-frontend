@@ -18,6 +18,8 @@ import {
   Account,
   Contracts,
   Help,
+  TasksList,
+  TaskRequest,
 } from './views';
 
 import './App.css';
@@ -41,6 +43,8 @@ const App: React.FC = () => {
         <Route path="/settings/account" element={<Account />} />
         <Route path="/settings/contracts" element={<Contracts />} />
         <Route path="/help" element={<Help />} />
+        <Route path="/tasks" element={<TasksList />} />
+        <Route path="/tasks/request" element={<TaskRequest />} />
         <Route path="/" element={<NoSession />} />
       </Routes>
     </BrowserRouter>
