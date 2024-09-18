@@ -7,6 +7,8 @@ import {
   Calendar,
   ChatInbox,
   ChatSession,
+  NoSession,
+  Dashboard,
 } from './views';
 
 import './App.css';
@@ -20,6 +22,8 @@ const App: React.FC = () => {
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/chat/inbox" element={<ChatInbox />} />
         <Route path="/chat/session/:chatId" element={<ChatSession />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/" element={<NoSession />} />
       </Routes>
     </BrowserRouter>
   );
