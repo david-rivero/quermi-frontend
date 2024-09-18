@@ -13,6 +13,11 @@ import {
   ProfileReport,
   RateProfile,
   ProfileSearch,
+  Settings,
+  Payments,
+  Account,
+  Contracts,
+  Help,
 } from './views';
 
 import './App.css';
@@ -31,6 +36,11 @@ const App: React.FC = () => {
         <Route path="/profile/report" element={<ProfileReport />} />
         <Route path="/profile/:profileId/rate" element={<RateProfile />} />
         <Route path="/profile/lookup" element={<ProfileSearch />} />
+        <Route path="/settings" element={<Settings />} />
+        <Route path="/settings/payments" element={<Payments />} />
+        <Route path="/settings/account" element={<Account />} />
+        <Route path="/settings/contracts" element={<Contracts />} />
+        <Route path="/help" element={<Help />} />
         <Route path="/" element={<NoSession />} />
       </Routes>
     </BrowserRouter>
