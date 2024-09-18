@@ -9,6 +9,10 @@ import {
   ChatSession,
   NoSession,
   Dashboard,
+  ProfileMe,
+  ProfileReport,
+  RateProfile,
+  ProfileSearch,
 } from './views';
 
 import './App.css';
@@ -23,6 +27,10 @@ const App: React.FC = () => {
         <Route path="/chat/inbox" element={<ChatInbox />} />
         <Route path="/chat/session/:chatId" element={<ChatSession />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/profile/me" element={<ProfileMe />} />
+        <Route path="/profile/report" element={<ProfileReport />} />
+        <Route path="/profile/:profileId/rate" element={<RateProfile />} />
+        <Route path="/profile/lookup" element={<ProfileSearch />} />
         <Route path="/" element={<NoSession />} />
       </Routes>
     </BrowserRouter>
